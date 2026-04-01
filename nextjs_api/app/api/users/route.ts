@@ -1,7 +1,7 @@
-import {getUsers , createUser} from "@/controller/user.js";
+import {getUsers , createUser} from "@/controller/user";
 import { NextResponse } from "next/server";
 
-export async function GET(){
+export async function GET() {
     const users = await getUsers();
     return NextResponse.json(users);
 }
